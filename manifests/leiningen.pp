@@ -1,6 +1,11 @@
 class clojure::leiningen {
+
   package { 'leiningen':
     ensure  => present,
-    require => Package['clojure'],
+    require => [
+      Homebrew::Tap['clojure'],
+      Package['clojure'],
+    ]
   }
+
 }
