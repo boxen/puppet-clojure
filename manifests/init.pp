@@ -1,13 +1,11 @@
 class clojure {
   require java
 
-  homebrew::tap { 'clojure':
-    source => 'puppet:///modules/clojure/brews'
+  homebrew::formula { 'clojure':
+    before => Package['boxen/brews/clojure']
   }
 
-  package { 'clojure':
-    require => Homebrew::Tap['clojure'],
-  }
+  package { 'boxen/brews/clojure': }
 
   include clojure::leiningen
 
