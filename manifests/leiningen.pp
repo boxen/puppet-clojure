@@ -4,7 +4,7 @@ class clojure::leiningen {
     before => Package['boxen/brews/leiningen']
   }
 
-  package { 'leiningen':
+  package { 'boxen/brews/leiningen':
     ensure  => '2.0.0',
     require => Package['boxen/brews/clojure']
   }
