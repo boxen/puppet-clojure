@@ -5,8 +5,8 @@ class clojure::leiningen {
   }
 
   package { 'leiningen':
-    ensure  => latest,
-    require => Package['boxen/brews/clojure'],
+    ensure  => '2.0.0',
+    require => Package['boxen/brews/clojure']
   }
 
 }
