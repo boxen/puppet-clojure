@@ -7,13 +7,6 @@ class Clojure < Formula
 
   version '1.4.0-boxen1'
 
-  head 'https://github.com/clojure/clojure.git'
-
-  devel do
-    url 'http://repo1.maven.org/maven2/org/clojure/clojure/1.5.0-RC1/clojure-1.5.0-RC1.zip'
-    sha1 '1820d7da736079c767bb3c02308d7e2c401a4410'
-  end
-
   def script; <<-EOS.undent
     #!/bin/sh
     # Clojure wrapper script.
@@ -30,8 +23,12 @@ class Clojure < Formula
     EOS
   end
 
+  def upstream_version
+    version.split('-').first
+  end
+
   def jar
-    "clojure-#{version}.jar"
+    "clojure-#{upstream_version}.jar"
   end
 
   def install
