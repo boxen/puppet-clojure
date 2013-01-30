@@ -5,6 +5,8 @@ class Leiningen < Formula
   url 'http://github.com/technomancy/leiningen/tarball/2.0.0'
   sha1 '133e1d0667734b25a10aa6547967710f296e8ea1'
 
+  version '2.0.0-boxen1'
+
   head 'https://github.com/technomancy/leiningen.git'
 
   def install
