@@ -24,7 +24,7 @@ class Clojure < Formula
   end
 
   def upstream_version
-    version.split('-').first
+    version.to_s.split('-').first
   end
 
   def jar
