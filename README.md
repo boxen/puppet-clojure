@@ -1,5 +1,7 @@
 # Clojure Puppet Module for Boxen
 
+[![Build Status](https://travis-ci.org/boxen/puppet-clojure.png?branch=master)](https://travis-ci.org/boxen/puppet-clojure)
+
 Install the [Clojure](http://clojure.org) programming language.
 
 ## Usage
