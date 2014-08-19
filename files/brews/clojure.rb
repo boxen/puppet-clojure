@@ -2,10 +2,10 @@ require 'formula'
 
 class Clojure < Formula
   homepage 'http://clojure.org/'
-  url 'http://repo1.maven.org/maven2/org/clojure/clojure/1.5.0/clojure-1.5.0.zip'
-  sha1 '38d1e9701e3a34d9a88a53ea0038ca29679bb55e'
+  url 'http://central.maven.org/maven2/org/clojure/clojure/1.6.0/clojure-1.6.0.zip'
+  sha1 '8816e74c20dcd5de8305aaebde7690331015b8f6'
 
-  version '1.5.0-boxen1'
+  version '1.6.0-boxen1'
 
   def script; <<-EOS.undent
     #!/bin/sh
